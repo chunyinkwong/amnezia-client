@@ -66,6 +66,11 @@ Make sure to pull all submodules after checking out the repo.
 git submodule update --init --recursive
 ```
 
+## Self-host runtime
+
+- When you choose self-hosting, the client installs Docker on your server and executes the scripts in `client/server_scripts` (each protocol folder contains the `Dockerfile` and `run_container.sh` used to build and run the container).
+- Raspberry Pi 5 on Debian/Raspberry Pi OS (64-bit) is supported: the server images now fetch ARM64 builds for Cloak and XRay during container build. Ensure Docker is installed and the OS is 64-bit before provisioning.
+
 ## Development
 
 Want to contribute? Welcome!
